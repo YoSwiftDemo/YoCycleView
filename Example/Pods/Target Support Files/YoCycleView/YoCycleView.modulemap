@@ -1,0 +1,6 @@
+framework module YoCycleView {
+  umbrella header "YoCycleView-umbrella.h"
+
+  export *
+  module * { export * }
+}

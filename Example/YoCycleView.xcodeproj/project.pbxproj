@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		27843AF1F796CF440EBAF025 /* Pods-YoCycleView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoCycleView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YoCycleView_Tests/Pods-YoCycleView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		300FAAA504C893A2C319F3AD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		300FAAA504C893A2C319F3AD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YoCycleView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoCycleView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +40,8 @@
 		607FACE51AFB9204008FA782 /* YoCycleView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoCycleView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6A32CCB87DB11DE8213D692E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		7492449EBC9BD5E15020F25E /* YoCycleView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YoCycleView.podspec; path = ../YoCycleView.podspec; sourceTree = "<group>"; };
+		6A32CCB87DB11DE8213D692E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7492449EBC9BD5E15020F25E /* YoCycleView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YoCycleView.podspec; path = ../YoCycleView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		842F7B4D7D0727D1E470A719 /* Pods_YoCycleView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoCycleView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8247091B7C00E1343DABD18 /* Pods-YoCycleView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoCycleView_Example.release.xcconfig"; path = "Target Support Files/Pods-YoCycleView_Example/Pods-YoCycleView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A873883E4D8333C49F66D193 /* Pods-YoCycleView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoCycleView_Example.debug.xcconfig"; path = "Target Support Files/Pods-YoCycleView_Example/Pods-YoCycleView_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				27843AF1F796CF440EBAF025 /* Pods-YoCycleView_Tests.debug.xcconfig */,
 				AF23514088F0EC77CB91BE61 /* Pods-YoCycleView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -291,10 +291,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YoCycleView_Example/Pods-YoCycleView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/YoCycleView/YoCycleView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YoCycleView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

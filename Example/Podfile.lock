@@ -1,0 +1,29 @@
+PODS:
+  - SDWebImage (5.12.1):
+    - SDWebImage/Core (= 5.12.1)
+  - SDWebImage/Core (5.12.1)
+  - SnapKit (4.2.0)
+  - YoCycleView (0.1.0):
+    - SDWebImage
+    - SnapKit
+
+DEPENDENCIES:
+  - YoCycleView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+    - SnapKit
+
+EXTERNAL SOURCES:
+  YoCycleView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  YoCycleView: c3b84f6d2ee0b0951a0d468af567adef6c28d981
+
+PODFILE CHECKSUM: 6a4f490035a3308b2b58be7bafcd28a505377af1
+
+COCOAPODS: 1.11.2
