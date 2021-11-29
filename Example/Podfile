@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'YoCycleView_Example' do
+  pod 'YoCycleView', :path => '../'
+
+  target 'YoCycleView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
